@@ -16,8 +16,8 @@ try:
     from mock import Mock
 
     to_be_mocked = [
-        'micropython',
-        'machine',
+        "micropython",
+        "machine",
     ]
     for module in to_be_mocked:
         sys.modules[module] = Mock()
