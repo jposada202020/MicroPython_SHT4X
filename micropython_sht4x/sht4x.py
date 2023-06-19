@@ -16,7 +16,6 @@ MicroPython Driver fot the Sensirion Temperature and Humidity SHT40 and SHT45 Se
 import time
 import struct
 from micropython import const
-from micropython_sht4x.i2c_helpers import CBits, RegisterStruct
 
 try:
     from typing import Tuple
@@ -33,7 +32,11 @@ HIGH_PRECISION = const(0)
 MEDIUM_PRECISION = const(1)
 LOW_PRECISION = const(2)
 temperature_precision_options = (HIGH_PRECISION, MEDIUM_PRECISION, LOW_PRECISION)
-temperature_precision_values = {HIGH_PRECISION:const(0xFD), MEDIUM_PRECISION:const(0xF6), LOW_PRECISION:const(0xE0)}
+temperature_precision_values = {
+    HIGH_PRECISION: const(0xFD),
+    MEDIUM_PRECISION: const(0xF6),
+    LOW_PRECISION: const(0xE0),
+}
 
 HEATER200mW = const(0)
 HEATER110mW = const(1)
@@ -44,8 +47,11 @@ TEMP_1 = const(0)
 TEMP_0_1 = const(1)
 heat_time_values = (TEMP_1, TEMP_0_1)
 
-wat_config = {HEATER200mW:(0x39, 0x32), HEATER110mW:(0x2F, 0x24), HEATER20mW:(0x1E, 0x15)}
-
+wat_config = {
+    HEATER200mW: (0x39, 0x32),
+    HEATER110mW: (0x2F, 0x24),
+    HEATER20mW: (0x1E, 0x15),
+}
 
 
 class SHT4X:
@@ -87,7 +93,7 @@ class SHT4X:
         self._address = address
         self._data = bytearray(6)
 
-        self._command = 0XFD
+        self._command = 0xFD
         self._temperature_precision = HIGH_PRECISION
         self._heater_power = HEATER20mW
         self._heat_time = TEMP_0_1
@@ -153,7 +159,9 @@ class SHT4X:
             ">HBHB", self._data
         )
 
-        if temp_crc != self._crc(memoryview(self._data[0:2])) or humidity_crc != self._crc(memoryview(self._data[3:5])):
+        if temp_crc != self._crc(
+            memoryview(self._data[0:2])
+        ) or humidity_crc != self._crc(memoryview(self._data[3:5])):
             raise RuntimeError("Invalid CRC calculated")
 
         temperature = -45.0 + 175.0 * temperature / 65535.0

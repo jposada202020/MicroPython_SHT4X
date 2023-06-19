@@ -92,4 +92,3 @@ Take a look at the examples directory
 Documentation
 =============
 API documentation for this library can be found on `Read the Docs <https://micropython-sht4x.readthedocs.io/en/latest/>`_.
-

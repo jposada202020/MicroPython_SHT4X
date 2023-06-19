@@ -30,8 +30,8 @@ Heater power settings
 
 Example showing the Heater power setting
 
-.. literalinclude:: ../examples/sht4x_heater power.py
-    :caption: examples/sht4x_heater power.py
+.. literalinclude:: ../examples/sht4x_heater_power.py
+    :caption: examples/sht4x_heater_power.py
     :lines: 5-
 
 Heat time settings
