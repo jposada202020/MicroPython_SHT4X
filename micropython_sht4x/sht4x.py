@@ -112,6 +112,7 @@ class SHT4X:
         +------------------------------------+------------------+
         | :py:const:`sht4x.LOW_PRECISION`    | :py:const:`2`    |
         +------------------------------------+------------------+
+
         """
         values = ("HIGH_PRECISION", "MEDIUM_PRECISION", "LOW_PRECISION")
         return values[self._temperature_precision]

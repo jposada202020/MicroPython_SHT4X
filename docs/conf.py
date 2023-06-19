@@ -25,12 +25,11 @@ try:
 
     import micropython_sht4x
 except ImportError:
-    raise SystemExit("eeprom has to be importable")
+    raise SystemExit("micropython_sht4x has to be importable")
 
 # -- General configuration ------------------------------------------------
 
 extensions = [
-    "myst_parser",
     "sphinx.ext.autodoc",
     "sphinx.ext.intersphinx",
     "sphinx.ext.napoleon",
