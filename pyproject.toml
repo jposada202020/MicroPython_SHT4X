@@ -1,0 +1,49 @@
+# SPDX-FileCopyrightText: Copyright (c) 2023 Jose D. Montoya
+#
+# SPDX-License-Identifier: MIT
+
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+    "setuptools-scm",
+]
+
+[project]
+name = "micropython-sht4x"
+description = "MicroPython Driver fot the Sensirion Temperature and Humidity SHT40 and SHT45 Sensor"
+version = "0.0.0+auto.0"
+readme = "README.rst"
+authors = [
+    {name = "JDM", email = "xxyx@mailmeto.mozmail.com"}
+]
+urls = {Homepage = "https://github.com/jposada202020/MicroPython_SHT4X"}
+keywords = [
+    "sensor",
+    "micropython",
+    "sht4x",
+    "temperature",
+    "humidity",
+    "driver",
+    "sensirion",
+    "sht40",
+    "sht45",
+    "micropython",
+    "sensor",
+]
+license = {text = "MIT"}
+classifiers = [
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Embedded Systems",
+    "Topic :: System :: Hardware",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: Implementation :: MicroPython",
+]
+dynamic = ["dependencies", "optional-dependencies"]
+
+[tool.setuptools]
+packages = ["sht4x"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
