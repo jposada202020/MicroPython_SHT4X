@@ -43,7 +43,7 @@ classifiers = [
 dynamic = ["dependencies", "optional-dependencies"]
 
 [tool.setuptools]
-packages = ["sht4x"]
+packages = ["micropython_sht4x"]
 
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}
