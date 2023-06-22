@@ -154,6 +154,7 @@ class SHT4X:
             time.sleep(1.2)
         elif self._command in (0x32, 0x24, 0x15):
             time.sleep(0.2)
+        time.sleep(0.2)
         self._i2c.readfrom_into(self._address, self._data)
 
         temperature, temp_crc, humidity, humidity_crc = struct.unpack_from(
