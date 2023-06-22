@@ -20,3 +20,4 @@ while True:
             print("Humidity: {:.2f} %%".format(relative_humidity))
             print()
             time.sleep(0.5)
+        sht.heater_power = heater_power

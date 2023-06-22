@@ -19,3 +19,4 @@ while True:
             print("Temperature: {:.2f} C".format(sht.temperature))
             print("Humidity: {:.2f} %%".format(sht.relative_humidity))
             time.sleep(0.5)
+        sht.temperature_precision = temperature_precision
