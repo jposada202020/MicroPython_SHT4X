@@ -23,7 +23,7 @@ Introduction
     :target: https://github.com/psf/black
     :alt: Code Style: Black
 
-MicroPython Driver fot the Sensirion Temperature and Humidity SHT40 and SHT45 Sensor
+MicroPython Driver fot the Sensirion Temperature and Humidity SHT40, SHT41 and SHT45 Sensor
 
 
 Installing with mip
