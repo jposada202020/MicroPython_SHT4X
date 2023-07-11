@@ -28,6 +28,7 @@ keywords = [
     "sensirion",
     "sht40",
     "sht45",
+    "sht41",
     "micropython",
     "sensor",
 ]
