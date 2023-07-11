@@ -5,7 +5,7 @@
 `sht4x`
 ================================================================================
 
-MicroPython Driver fot the Sensirion Temperature and Humidity SHT40 and SHT45 Sensor
+MicroPython Driver fot the Sensirion Temperature and Humidity SHT40, SHT41 and SHT45 Sensor
 
 
 * Author(s): Jose D. Montoya
