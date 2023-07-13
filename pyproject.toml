@@ -19,8 +19,6 @@ authors = [
 ]
 urls = {Homepage = "https://github.com/jposada202020/MicroPython_SHT4X"}
 keywords = [
-    "sensor",
-    "micropython",
     "sht4x",
     "temperature",
     "humidity",
@@ -28,6 +26,7 @@ keywords = [
     "sensirion",
     "sht40",
     "sht45",
+    "sht41",
     "micropython",
     "sensor",
 ]

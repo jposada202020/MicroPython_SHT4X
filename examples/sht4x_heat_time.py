@@ -16,8 +16,8 @@ while True:
         print("Current Heat time setting: ", sht.heat_time)
         for _ in range(10):
             temperature, relative_humidity = sht.measurements
-            print("Temperature: {:.2f} C".format(temperature))
-            print("Humidity: {:.2f} %%".format(relative_humidity))
+            print(f"Temperature: {temperature:.2f}°C")
+            print(f"Relative Humidity: {relative_humidity:.2%}%")
             print()
             time.sleep(0.5)
         sht.heat_time = heat_time

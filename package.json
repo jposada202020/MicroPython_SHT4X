@@ -1,7 +1,13 @@
 {
   "urls": [
-    ["micropython_sht4x/__init__.py", "github:jposada202020/MicroPython_SHT4X/micropython_sht4x/__init__.py"],
-    ["micropython_sht4x/sht4x.py", "github:jposada202020/MicroPython_SHT4X/micropython_sht4x/sht4x.py"]
+    [
+      "micropython_sht4x/__init__.py",
+      "github:jposada202020/MicroPython_SHT4X/micropython_sht4x/__init__.py"
+    ],
+    [
+      "micropython_sht4x/sht4x.py",
+      "github:jposada202020/MicroPython_SHT4X/micropython_sht4x/sht4x.py"
+    ]
   ],
-  "version": "0.1"
+  "version": "1"
 }

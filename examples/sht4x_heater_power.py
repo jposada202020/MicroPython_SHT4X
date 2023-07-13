@@ -16,8 +16,8 @@ while True:
         print("Current Heater power setting: ", sht.heater_power)
         for _ in range(10):
             temperature, relative_humidity = sht.measurements
-            print("Temperature: {:.2f} C".format(temperature))
-            print("Humidity: {:.2f} %%".format(relative_humidity))
+            print(f"Temperature: {temperature:.2f}°C")
+            print(f"Relative Humidity: {relative_humidity:.2%}%")
             print()
             time.sleep(0.5)
         sht.heater_power = heater_power

@@ -1,9 +1,21 @@
 {
   "urls": [
-    ["micropython_sht4x/examples/sht4x_heat_time.py", "github:jposada202020/MicroPython_SHT4X/examples/sht4x_heat_time.py"],
-    ["micropython_sht4x/examples/sht4x_heater_power.py", "github:jposada202020/MicroPython_SHT4X/examples/sht4x_heater_power.py"],
-    ["micropython_sht4x/examples/sht4x_simpletest.py", "github:jposada202020/MicroPython_SHT4X/examples/sht4x_simpletest.py"],
-    ["micropython_sht4x/examples/sht4x_temperature_precision.py", "github:jposada202020/MicroPython_SHT4X/examples/sht4x_temperature_precision.py"]
+    [
+      "micropython_sht4x/examples/sht4x_heat_time.py",
+      "github:jposada202020/MicroPython_SHT4X/examples/sht4x_heat_time.py"
+    ],
+    [
+      "micropython_sht4x/examples/sht4x_heater_power.py",
+      "github:jposada202020/MicroPython_SHT4X/examples/sht4x_heater_power.py"
+    ],
+    [
+      "micropython_sht4x/examples/sht4x_simpletest.py",
+      "github:jposada202020/MicroPython_SHT4X/examples/sht4x_simpletest.py"
+    ],
+    [
+      "micropython_sht4x/examples/sht4x_temperature_precision.py",
+      "github:jposada202020/MicroPython_SHT4X/examples/sht4x_temperature_precision.py"
+    ]
   ],
-  "version": "0.1"
+  "version": "1"
 }

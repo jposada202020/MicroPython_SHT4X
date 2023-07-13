@@ -16,7 +16,7 @@ while True:
         print("Current Temperature precision setting: ", sht.temperature_precision)
         for _ in range(10):
             temperature, relative_humidity = sht.measurements
-            print("Temperature: {:.2f} C".format(sht.temperature))
-            print("Humidity: {:.2f} %%".format(sht.relative_humidity))
+            print(f"Temperature: {temperature:.2f}°C")
+            print(f"Relative Humidity: {relative_humidity:.2%}%")
             time.sleep(0.5)
         sht.temperature_precision = temperature_precision

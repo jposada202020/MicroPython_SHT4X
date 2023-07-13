@@ -11,7 +11,7 @@ sht = sht4x.SHT4X(i2c)
 
 while True:
     temperature, relative_humidity = sht.measurements
-    print("Temperature: {:.2f} C".format(sht.temperature))
-    print("Humidity: {:.2f} %%".format(sht.relative_humidity))
+    print(f"Temperature: {temperature:.2f}°C")
+    print(f"Relative Humidity: {relative_humidity:.2%}%")
     print("")
     time.sleep(0.5)
