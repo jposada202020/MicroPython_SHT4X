@@ -38,7 +38,7 @@ To install directly using a WIFI capable board
 
 .. code-block:: shell
 
-    mip install github:jposada202020/MicroPython_SHT4X
+    ip.install("github:jposada202020/MicroPython_SHT4X
 
 
 Installing Library Examples
