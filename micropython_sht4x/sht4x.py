@@ -8,7 +8,7 @@
 MicroPython Driver fot the Sensirion Temperature and Humidity SHT40, SHT41 and SHT45 Sensor
 
 
-* Author(s): Jose D. Montoya
+* Author: Jose D. Montoya
 
 
 """
@@ -199,6 +199,7 @@ class SHT4X:
         4. Temperature and humidity values are now available for readout.
         The maximum on-time of the heater commands is one second in order
         to prevent overheating
+        
         +-------------------------------+---------------+
         | Mode                          | Value         |
         +===============================+===============+
@@ -208,6 +209,7 @@ class SHT4X:
         +-------------------------------+---------------+
         | :py:const:`sht4x.HEATER20mW`  | :py:const:`2` |
         +-------------------------------+---------------+
+        
         """
         values = ("HEATER200mW", "HEATER110mW", "HEATER20mW")
         return values[self._heater_power]
